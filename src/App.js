@@ -23,6 +23,8 @@ import ContactUs from './components/ContactUs';
 import ConfirmOrderForm from './components/ConfirmOrderForm';
 import ViewSortingForm from './components/ViewSortingForm';
 import SampleFormById from './components/sampleFormById';
+import Seestatus from './components/Seestatus';
+import Update from './components/Update';
 function App() {
   return (
     <div className="App">
@@ -52,6 +54,8 @@ function App() {
                 <Route path="/sampleFormById" component={SampleFormById}/>
                 <Route path="/home" component={PlaceOrderComponent}/>
                 <Route path="/orderSummary"><Ordersummary /> </Route>
+                <Route path='/update' exact component={Update}/>
+                <Route path='/status' exact component={Seestatus}/>
               
                     </Switch>
                     
